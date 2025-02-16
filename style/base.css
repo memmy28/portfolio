@@ -18,6 +18,8 @@
     --font-header: "Moderniz", sans-serif;
     --font: "MontserratRegular", sans-serif;
     --font-bold: "MontserratBold", sans-serif;
+
+    --gap: 1rem;
 }
 
 @font-face {
@@ -54,13 +56,15 @@ body {
     color: var(--primary-text-color);
     font-family: var(--font);
     font-size: 16px;
+    padding: 0 0.5rem;
 }
 
 h1 {
     text-align: center;
     font-family: var(--font-header);
     font-size: 30px;
-    margin-top: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
 }
 
 h2 {
@@ -90,9 +94,32 @@ html {
     scroll-padding-top: 1rem;
 }
 
+.label-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+}
+
+.label {
+    background-color: var(--secondary-background-color);
+    border: none;
+    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px var(--color-gray);
+    width: fit-content;
+    margin: auto;
+    white-space: nowrap; 
+    display: inline-block;
+    margin: 0;
+}
+
 /* tablet (portrait) */
 @media (min-width: 600px) {
-    a, body {
+
+    a,
+    body {
         font-size: 18px;
     }
 
@@ -119,8 +146,11 @@ html {
 
 /* tablets landscape */
 @media (min-width: 768px) {
-    a, body {
+
+    a,
+    body {
         font-size: 20px;
+        padding: 0 1rem;
     }
 
     h1 {
@@ -146,8 +176,11 @@ html {
 
 /* laptops */
 @media (min-width: 1024px) {
-    a, body {
+
+    a,
+    body {
         font-size: 20px;
+        padding: 0 2rem;
     }
 
     h1 {
@@ -173,7 +206,9 @@ html {
 
 /* desktop */
 @media (min-width: 1600px) {
-    a, body {
+
+    a,
+    body {
         font-size: 25px;
     }
 
