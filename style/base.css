@@ -3,7 +3,7 @@
     --secondary-background-color: #161616;
 
     --primary-color: #4A0A0A;
-    
+    --secondary-color: #A33C3C;
 
     --color-white: #FFFFFF;
     --color-black: #000000;
@@ -13,19 +13,187 @@
     --primary-text-color: #FFFFFF;
     --secondary-text-color: #000000;
 
-    --sidebar-hover: #A33C3C;
-
     --width-sidebar: 20%;
 
-    --font-family: Arial, sans-serif;
+    --font-header: "Moderniz", sans-serif;
+    --font: "MontserratRegular", sans-serif;
+    --font-bold: "MontserratBold", sans-serif;
 }
+
+@font-face {
+    font-family: "Moderniz";
+    src: url("../assets/fonts/Moderniz.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MontserratRegular";
+    src: url("../assets/fonts/Montserrat-Regular.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MontserratBold";
+    src: url("../assets/fonts/Montserrat-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* breakpoints:
+ * mobile: < 600px
+ * tablet (portrait): >= 600px and < 768px
+ * tablet (landscape): >= 768px and < 1024px
+ * laptop: <= 1024px and < 1600px
+ * desktop: >= 1600px
+ */
 
 body {
     background-color: var(--primary-background-color);
     color: var(--primary-text-color);
-    font-family: var(--font-family);
+    font-family: var(--font);
+    font-size: 16px;
 }
 
 h1 {
     text-align: center;
+    font-family: var(--font-header);
+    font-size: 30px;
+    margin-top: 2rem;
+}
+
+h2 {
+    font-family: var(--font-header);
+    font-size: 20px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+h3 {
+    text-align: center;
+    font-family: var(--font-bold);
+    font-size: 25px;
+}
+
+h4 {
+    font-family: var(--font-bold);
+    font-size: 20px;
+}
+
+h5 {
+    font-family: var(--font-bold);
+    font-size: 18px;
+}
+
+html {
+    scroll-padding-top: 1rem;
+}
+
+/* tablet (portrait) */
+@media (min-width: 600px) {
+    a, body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+}
+
+/* tablets landscape */
+@media (min-width: 768px) {
+    a, body {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    h4 {
+        font-size: 30px;
+    }
+
+    h5 {
+        font-size: 25px;
+    }
+}
+
+/* laptops */
+@media (min-width: 1024px) {
+    a, body {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 45px;
+    }
+
+    h4 {
+        font-size: 35px;
+    }
+
+    h5 {
+        font-size: 25px;
+    }
+}
+
+/* desktop */
+@media (min-width: 1600px) {
+    a, body {
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 60px;
+    }
+
+    h4 {
+        font-size: 45px;
+    }
+
+    h5 {
+        font-size: 35px;
+    }
 }
