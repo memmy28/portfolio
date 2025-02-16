@@ -4,13 +4,14 @@ function createSidebar() {
     const sidebar = document.createElement("div");
     sidebar.classList.add("sidebar");
 
+    // navigation
     const links = [
         { text: "About", href: "#about" },
         { text: "Education", href: "#education" },
         { text: "Experience", href: "#experience" },
         { text: "Skills", href: "#skills" },
         { text: "Projects", href: "#projects" },
-        { text: "Sports Carreer", href: "#sports" },
+        { text: "Sports", href: "#sports" },
         { text: "Hobbies", href: "#hobbies" },
         { text: "Contact", href: "#contact" }
     ];
