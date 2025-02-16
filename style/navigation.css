@@ -1,0 +1,133 @@
+/* sidebar */
+.sidebar {
+    background-color: var(--primary-color);
+    color: var(--secondary-text-color);
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: var(--width-sidebar);
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* sidebar links */
+.sidebar a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    margin: 1rem;
+}
+
+.sidebar a:hover {
+    background-color: var(--secondary-color);
+}
+
+/* prevent overlap of content with sidebar */
+.content {
+    margin-left: var(--width-sidebar);
+    padding: 20px;
+}
+
+/* hide hamburger menue on bigger screens */
+.hamburger-bar {
+    display: none;
+}
+
+@media (max-width: 767px) {
+
+    /* hide sidebar on smaller screens */
+    .sidebar {
+        display: none;
+    }
+
+    /* hamburger menu */
+    .hamburger-bar {
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .hamburger-icon {
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    /* dropdown menu */
+    .dropdown-menu {
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        max-height: 85vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .dropdown-menu a {
+        color: var(--primary-text-color);
+        text-decoration: none;
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-menu a:hover {
+        background-color: var(--secondary-color);
+    }
+
+    /* show dropdown when active */
+    .dropdown-menu.active {
+        display: flex;
+    }
+
+    /* style scrollbar */
+    .dropdown-menu::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Styling the scrollbar thumb (the moving part) */
+    .dropdown-menu::-webkit-scrollbar-thumb {
+        background: var(--color-white);
+        border-radius: 10px;
+    }
+
+    /* Styling when hovering over the scrollbar */
+    .dropdown-menu::-webkit-scrollbar-thumb:hover {
+        background: var(--secondary-color);
+    }
+
+    /* Optional: Styling the scrollbar track (the area behind the thumb) */
+    .dropdown-menu::-webkit-scrollbar-track {
+        background: var(--background-color);
+    }
+
+
+    /* move site content back to the left when sidebar is not visible */
+    .content {
+        margin-left: 0;
+    }
+
+    /* show heading of the section, after navigation */
+    html {
+        scroll-padding-top: 70px;
+    }
+}
