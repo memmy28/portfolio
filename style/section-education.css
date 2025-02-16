@@ -1,0 +1,70 @@
+/* Education container */
+.education {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* time line */
+.education::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--color-white);
+}
+
+.education-dot {
+    width: 25px;
+    height: 25px;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+}
+
+/* education cards */
+.education-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.education-card {
+    background-color: var(--secondary-background-color);
+    border: none;
+    padding: 10px;
+    margin-left: 40px;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px var(--color-gray);
+    width: 100%;
+    max-width: 100%;
+}
+
+/* date and place */
+.education-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.education-info-container .education-info {
+    display: block;
+    font-size: 0.9em;
+    color: var(--color-light-gray);
+    margin-bottom: 5px;
+}
+
+/* paddings */
+.education-card h2,
+.education-card h4,
+.education-card h5,
+.education-card p,
+.education-card .education-info {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
