@@ -8,10 +8,10 @@
 
     <!-- stylesheets -->
     <link rel="stylesheet" href="style/base.css">
-    <link rel="stylesheet card" href="style/card.css">
     <link rel="stylesheet navigation" href="style/navigation.css">
-    <link rel="stylesheet navigation" href="style/section-about.css">
-    <link rel="stylesheet navigation" href="style/section-education.css">
+    <link rel="stylesheet section about me" href="style/section-about.css">
+    <link rel="stylesheet section education" href="style/section-education.css">
+    <link rel="stylesheet section projects" href="style/section-projects.css">
 </head>
 
 <body>
@@ -43,14 +43,6 @@
         <section id="education">
             <h1>Education</h1>
             <div id="education-container"></div>
-
-            <template id="card-template">
-                <div class="card">
-                    <h2></h2>
-                    <p></p>
-                </div>
-            </template>
-            <div id="card-container"></div>
         </section>
 
         <!-- experience -->
@@ -112,29 +104,7 @@
         <!-- projects -->
         <section id="projects">
             <h1>Projects</h1>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-                amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-                kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
-                dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
-                luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,
-                consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-                erat volutpat.
-
-                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
-                ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
-                consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim
-                qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-
-                Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat
-                facer</p>
+            <div id="projects-container"></div>
         </section>
 
         <!-- sports -->
@@ -271,8 +241,8 @@
     <!-- components -->
     <script src="scripts/navigation-side-bar.js"></script>
     <script src="scripts/navigation-hamburger-menue.js"></script>
-    <script src="scripts/card.js"></script>
-    <script src="scripts/education.js"></script>
+    <script src="scripts/section-education.js"></script>
+    <script src="scripts/section-projects.js"></script>
 </body>
 
 </html>
