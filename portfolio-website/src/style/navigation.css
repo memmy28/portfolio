@@ -15,8 +15,15 @@
     align-items: center;
 }
 
+.sidebar .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* sidebar links */
-.sidebar a {
+.sidebar .link {
     color: var(--primary-text-color);
     text-decoration: none;
     padding: 1rem;
@@ -25,8 +32,9 @@
     margin: 1rem;
 }
 
-.sidebar a:hover {
+.sidebar .link:hover {
     background-color: var(--secondary-color);
+    border-radius: 0.7rem;
 }
 
 /* prevent overlap of content with sidebar */
