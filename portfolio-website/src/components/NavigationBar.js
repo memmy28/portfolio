@@ -14,27 +14,35 @@ const NavigationBar = () => {
     ];
 
     const [isOpen, setIsOpen] = useState(false);
+    const dropdownMenu = useRef(null)
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
         console.log("Hamburger open: " + isOpen); // TODO: remove
     };
 
+    const closeMenu = (e) => {
+        if (isOpen && !dropdownMenu.current?.contains(e.target)) {
+            toggleMenu();
+        }
+    };
+
+    document.addEventListener('mousedown', closeMenu)
+
     return (
-        <div className="hamburger-bar">
+        <div className="hamburger-bar" ref={dropdownMenu}>
             <span className="hamburger-icon" onClick={toggleMenu}>&#9776;</span>
 
             {isOpen && (
-                // TODO: display dropdown
                 <div className="dropdown-menu">
                     {links.map((link, index) => (
-                        <a className="dropdown-link" key={index} href={link.href}>{link.text}</a>
+                        <a className="dropdown-link" key={index} href={link.href} onClick={toggleMenu}>{link.text}</a>
                     ))}
                 </div>
             )}
-
         </div>
     );
+
 };
 
 export default NavigationBar;

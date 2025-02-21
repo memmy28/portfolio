@@ -103,7 +103,7 @@
     }
 
     /* show dropdown when active */
-    .dropdown-menu.active {
+    .dropdown-menu {
         display: flex;
     }
 
