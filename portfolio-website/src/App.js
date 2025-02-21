@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import NavigationSidebar from "./components/NavigationSidebar";
 import NavigationBar from "./components/NavigationBar";
-import Labels from "./components/Labels";
+import SectionAboutMe from "./components/SectionAboutMe";
 
 function App() {
   return (
@@ -14,18 +14,7 @@ function App() {
       <NavigationBar />
 
       <div className="content">
-        <section className="about" id="about">
-          <h1>Alema Hadzic</h1>
-          <Labels labels={["Software Developer", "Computer Science Student", "Software Developer", "Computer Science Student", "Software Developer", "Computer Science Student", "Software Developer", "Computer Science Student", "Software Developer", "Computer Science Student"]} />
-          <p>Hi! I'm a 24-year-old Computer Science student in my final semester at Georg Simon Ohm Hochschule in
-            Nuremberg, Germany. I will graduate with a bachelor's degree in the spring of 2025. Currently, I work
-            part-time as a Software Developer at insert effect in Nuremberg, Germany. I love tackling new projects
-            and gaining experience in different areas.</p>
-          <div className="button-container">
-            <a className="button" href="assets/cv.pdf" download target="_blank">Download CV</a>
-            <a className="button" href="#contact">Contact me</a>
-          </div>
-        </section>
+        <SectionAboutMe/>
 
         <section id="education">
           <h1>Education</h1>
