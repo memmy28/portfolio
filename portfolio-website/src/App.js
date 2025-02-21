@@ -3,6 +3,7 @@ import './App.css';
 import NavigationSidebar from "./components/NavigationSidebar";
 import NavigationBar from "./components/NavigationBar";
 import SectionAboutMe from "./components/SectionAboutMe";
+import ProjectCard from "./components/ComponentCards";
 
 function App() {
   return (
@@ -14,11 +15,13 @@ function App() {
       <NavigationBar />
 
       <div className="content">
-        <SectionAboutMe/>
+        <SectionAboutMe />
 
         <section id="education">
           <h1>Education</h1>
-          <div id="education-container"></div>
+          <div id="education-container">
+            <ProjectCard />
+          </div>
         </section>
 
         <section id="experience">

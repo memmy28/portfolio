@@ -1,0 +1,52 @@
+.project-card {
+    background-color: var(--secondary-background-color) !important;
+    color: var(--primary-text-color) !important;
+    border: none;
+    border-radius: var(--card-border-radius) !important;
+}
+
+.card-heading {
+    font-family: var(--font-header) !important;
+    text-align: start;
+}
+
+.card-text {
+    font-family: var(--font) !important;
+    color: var(--primary-text-color) !important;
+    text-align: start;
+}
+
+.project-card-content .button-container {
+    justify-content: start;
+}
+
+/* information (date and place) */
+.info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .info-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .info {
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    color: var(--color-light-gray);
+  }
+  
+  .icon {
+    color: var(--color-light-gray);
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    fill: red;
+  }
