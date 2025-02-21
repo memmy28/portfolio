@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import NavigationSidebar from "./components/NavigationSidebar";
 import NavigationBar from "./components/NavigationBar";
+import Labels from "./components/Labels";
 
 function App() {
   return (
@@ -15,10 +16,7 @@ function App() {
       <div className="content">
         <section className="about" id="about">
           <h1>Alema Hadzic</h1>
-          <div className="label-container">
-            <p className="label">Software Developer</p>
-            <p className="label">Computer Science Student</p>
-          </div>
+          <Labels labels={["Software Developer", "Computer Science Student", "Software Developer", "Computer Science Student", "Software Developer", "Computer Science Student", "Software Developer", "Computer Science Student", "Software Developer", "Computer Science Student"]} />
           <p>Hi! I'm a 24-year-old Computer Science student in my final semester at Georg Simon Ohm Hochschule in
             Nuremberg, Germany. I will graduate with a bachelor's degree in the spring of 2025. Currently, I work
             part-time as a Software Developer at insert effect in Nuremberg, Germany. I love tackling new projects
