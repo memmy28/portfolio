@@ -3,18 +3,18 @@ import Labels from "./ComponentLabels";
 import Buttons from "./ComponentButtons";
 import "../style/section-about.css"
 
-const SectionAboutMe = ({ labels }) => {
+const SectionAboutMe = () => {
     return (
         <section className="about" id="about">
             <h1>Alema Hadzic</h1>
-            <Labels labels={["Software Developer", "Computer Science Student"]} />
-            <p>Hi! I'm a 24-year-old Computer Science student in my final semester at Georg Simon Ohm Hochschule in
-                Nuremberg, Germany. I will graduate with a bachelor's degree in the spring of 2025. Currently, I work
-                part-time as a Software Developer at insert effect in Nuremberg, Germany. I love tackling new projects
-                and gaining experience in different areas.</p>
+            <Labels labels={["Softwareentwicklerin", "Informatikstudentin"]} />
+            <p>Hi! Ich bin eine 24-jährige Informatikstudentin in meinem letzten Semester an der Georg Simon Ohm Hochschule in
+                Nürnberg und werde mein Bachelorstudium voraussichtlich im Sommersemester 2025 beenden. Neben dem Studium arbeite 
+                ich als Werkstudentin im Bereich Softwareentwicklung bei insert effect in Nürnberg. Ich liebe es neue Projekte anzugehen
+                und neue Erfahrungen in verschiedenen Bereichen zu sammeln.</p>
             <Buttons buttons={[
-                { text: "Download CV", href: "assets/cv.pdf", target: "_blank", download: true },
-                { text: "Contact me", href: "#contact", target: "_self", download: false },
+                { text: "Zu meinem Lebenslauf", href: "assets/cv.pdf", target: "_blank", download: true },
+                { text: "Kontaktiere mich", href: "#contact", target: "_self", download: false },
             ]} />
         </section>
     );
