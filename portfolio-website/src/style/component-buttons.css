@@ -16,8 +16,7 @@
   
     border: none;
     padding: 10px;
-    border-radius: 0.7rem;
-    box-shadow: 2px 2px 5px var(--color-gray);
+    border-radius: var(--border-radius);
     width: fit-content;
     margin: auto;
     white-space: nowrap;

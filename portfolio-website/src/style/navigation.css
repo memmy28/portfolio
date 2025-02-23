@@ -35,7 +35,7 @@
 
 .sidebar .link:hover {
     background-color: var(--secondary-color);
-    border-radius: 0.7rem;
+    border-radius: var(--border-radius);
 }
 
 /* prevent overlap of content with sidebar */
@@ -116,7 +116,7 @@
     /* Styling the scrollbar thumb (the moving part) */
     .dropdown-menu::-webkit-scrollbar-thumb {
         background: var(--color-white);
-        border-radius: 10px;
+        border-radius: var(--border-radius);
     }
 
     /* Styling when hovering over the scrollbar */
