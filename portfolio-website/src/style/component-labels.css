@@ -1,23 +1,30 @@
+.label-container, .language-label-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
 
-.label-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: var(--gap);
-  }
-  
-  .label {
-    background-color: var(--secondary-background-color);
-    border: none;
-    padding: 10px;
-    border-radius: 1rem;
-    box-shadow: 2px 2px 5px var(--color-gray);
-    width: fit-content;
-    margin: auto;
-    white-space: nowrap;
-    display: inline-block;
-    margin: 0;
-    font-family: var(--font);
-  }
+.language-label-container {
+  justify-content: start;
+  align-items: center;
+}
+
+.label, .language-label {
+  background-color: var(--secondary-background-color);
+  border: none;
+  padding: 7px;
+  border-radius: var(--border-radius);
+  width: fit-content;
+  margin: auto;
+  white-space: nowrap;
+  display: inline-block;
+  margin: 0;
+  font-family: var(--font);
+}
+
+.language-label {
+  background-color: var(--secondary-color);
+}
