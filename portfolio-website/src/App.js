@@ -3,6 +3,7 @@ import './App.css';
 import NavigationSidebar from "./components/NavigationSidebar";
 import NavigationBar from "./components/NavigationBar";
 import SectionAboutMe from "./components/SectionAboutMe";
+import SectionProjects from "./components/SectionProjects";
 import ProjectCard from "./components/ComponentCards";
 
 function App() {
@@ -17,7 +18,6 @@ function App() {
         <section id="education">
           <h1>Education</h1>
           <div id="education-container">
-            <ProjectCard />
           </div>
         </section>
 
@@ -75,10 +75,7 @@ function App() {
             facer</p>
         </section>
 
-        <section id="projects">
-          <h1>Projects</h1>
-          <div id="projects-container"></div>
-        </section>
+        <SectionProjects />
 
         <section id="sports">
           <h1>Sports</h1>
