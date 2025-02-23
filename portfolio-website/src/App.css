@@ -19,12 +19,13 @@
   --secondary-text-color: var(--color-black);
 
   --width-sidebar: 20%;
+  --border-radius: 1rem;
 
   --font-header: "Moderniz", sans-serif;
   --font: "MontserratRegular", sans-serif;
   --font-bold: "MontserratBold", sans-serif;
 
-  --gap: 1rem;
+  --gap: 0.5rem;
   --card-top-padding: 1rem;
   --card-border-radius: 1rem;
 }
