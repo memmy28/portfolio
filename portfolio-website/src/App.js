@@ -8,9 +8,6 @@ import ProjectCard from "./components/ComponentCards";
 function App() {
   return (
     <div className="App">
-      navigation hamburger menue for smaller screens
-      <div id="hamburger-menu-container"></div>
-
       <NavigationSidebar />
       <NavigationBar />
 
