@@ -16,3 +16,16 @@ const Labels = ({labels}) => {
 };
 
 export default Labels;
+
+export const LanguageLabels = ({labels}) => {
+    <Label>
+    </Label>
+
+    return (
+        <div className="language-label-container">
+            {labels.map((label, index) => (
+                <div class="language-label" key={index}>{label}</div>
+            ))}
+        </div>
+    );
+};
