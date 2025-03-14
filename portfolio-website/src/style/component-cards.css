@@ -26,6 +26,36 @@
     justify-content: start;
 }
 
+@media (max-width: 599px) {
+  img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 767px) {
+  img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 1023px) {
+  img {
+    height: 350px;
+  }
+}
+
+@media (max-width: 1599px) {
+  img {
+    height: 250px;
+  }
+}
+
+@media (min-width: 1600px) {
+  img {
+    height: 350px;
+  }
+}
+
 /* information (date and place) */
 .info-container {
     display: flex;
@@ -33,6 +63,7 @@
     justify-content: start;
     align-items: center;
     gap: 2rem;
+    margin-bottom: 0.5rem;
   }
   
   .info-wrapper {
