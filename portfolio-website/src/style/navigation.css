@@ -36,6 +36,7 @@
 .sidebar .link:hover {
     background-color: var(--secondary-color);
     border-radius: var(--border-radius);
+    transition: background-color 0.3s ease-in-out; 
 }
 
 /* prevent overlap of content with sidebar */
@@ -68,6 +69,7 @@
         left: 0;
         width: 100%;
         box-sizing: border-box;
+        z-index: 100;
     }
 
     .hamburger-icon {
@@ -101,6 +103,7 @@
 
     .dropdown-menu a:hover {
         background-color: var(--secondary-color);
+        transition: background-color 0.3s ease-in-out; 
     }
 
     /* show dropdown when active */
