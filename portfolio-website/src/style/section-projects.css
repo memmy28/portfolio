@@ -2,11 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem; 
-  justify-content: center; 
+  justify-content: start; 
 }
 
 .project-card {
-  width: calc(50% - 1rem); 
+  width: 48%; 
   min-width: 250px;
 }
 

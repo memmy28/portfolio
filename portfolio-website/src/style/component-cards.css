@@ -3,6 +3,7 @@
     color: var(--primary-text-color) !important;
     border: none;
     border-radius: var(--card-border-radius) !important;
+    cursor: default !important;
 }
 
 .card-heading {
@@ -14,6 +15,11 @@
     font-family: var(--font) !important;
     color: var(--primary-text-color) !important;
     text-align: start;
+    padding-bottom: 0;
+}
+
+#projects-container {
+  padding-bottom: 1rem;
 }
 
 .project-card-content .button-container {
