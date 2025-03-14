@@ -19,26 +19,24 @@ export default function ProjectCard({ project }) {
 
   return (
     <Card className="project-card" >
-      <CardActionArea sx={{
-        ".MuiCardActionArea-focusHighlight": {
-          background: "transparent",
-        },
-      }} >
-        <CardMedia className="project-card-media"
-          component="img"
-          height="200"
-          image={project.image}
-          alt={project.alt}
-        />
-        <CardContent className="project-card-content">
-          <Typography className="card-heading" variant="h5" component="div">{project.title}</Typography>
-          <Info time={project.time} place={project.place} />
-          <LanguageLabels labels={project.labels} />
-          <Typography className="card-text" variant="body2">{project.description}</Typography>
-          <Buttons className="card-buttons" buttons={project.buttons} />
-        </CardContent>
-
-      </CardActionArea>
+      <CardMedia className="project-card-media"
+        component="img"
+        height="200"
+        image={project.image}
+        alt={project.alt}
+      />
+      <CardContent className="project-card-content">
+        <Typography className="card-heading" variant="h5" component="div">{project.title}</Typography>
+        <Info time={project.time} place={project.place} />
+        <LanguageLabels labels={project.labels} />
+        <div id="projects-container">
+          {project.description.map((description, index) => (
+            // <ProjectCard key={index} project={project} />
+            <Typography className="card-text" variant="body2" key={index}>{description}</Typography>
+          ))}
+        </div>
+        <Buttons className="card-buttons" buttons={project.buttons} />
+      </CardContent>
     </Card >
   );
 }
