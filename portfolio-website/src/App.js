@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <NavigationSidebar />
-      <NavigationBar />
+      <NavigationBar style={{ position: 'absolute', zIndex: '1' }}/>
 
       <div className="content">
         <SectionAboutMe />
