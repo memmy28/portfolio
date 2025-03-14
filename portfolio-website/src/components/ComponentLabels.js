@@ -1,5 +1,5 @@
 import React from 'react'
-import { Icon, Label } from 'semantic-ui-react'
+import { Label } from 'semantic-ui-react'
 import "../style/component-labels.css"
 
 const Labels = ({labels}) => {

@@ -5,8 +5,6 @@ import { faCalendar } from '@fortawesome/free-solid-svg-icons'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 
 
-import { Icon, Label } from 'semantic-ui-react'
-
 const Info = ({ time, place }) => {
     return (
         <div className="info-container">
