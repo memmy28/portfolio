@@ -5,30 +5,37 @@ import "../style/section-projects.css"
 const SectionProjects = () => {
     const projects = [
         {
-            title: "Random Project",
+            title: "Automatisches Schneiden von Taekwondo-Livestreams",
             time: "2024",
-            place: "Nbg",
-            description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labor",
-            image: "assets/foto.jpg",
-            alt: "Alt",
-            labels: ["Python", "VS Code"],
+            place: "Nürnberg, Deutschland",
+            labels: ["Python", "OpenCV", "Tesseract", "SciKit Image", "PyCharm"],
+            description: ["Die Liveübertragung eines Taekwondo-Wettkampfs kann mehrere Stunden lang sein und eine hohe Anzahl an Einzelkämpfen enthalten. Darin einen bestimmten Kampf zu finden kann somit schwierig sein. Dieses Projekt befasst sich mit einer automatischen Identifizierung der Zeitpunkte, zu denen die Kämpfe einer Taekwondo-Liveübertragung starten und enden.", "Zusätzlich werden die Kampfnummern und Namen der Athleten aus dem Video extrahiert und mit den identifizierten Zeitpunkten aufgelistet, um die Suche nach einem bestimmten Kampf zu vereinfachen."],
+            image: "assets/projects/bachelorarbeit.jpg",
+            alt: "Testframes, die bei der Entwicklung des Projekts verwendet wurden",
+            buttons: []
+        },
+        {
+            title: "Chatbot zur Beantwortung von Fragen zum Studium",
+            time: "2023-2024",
+            place: "Nürnberg, Deutschland",
+            labels: ["C#", "Rasa", "Misty Robot", "Visual Studio"],
+            description: ["Bei diesem Projekt wurde der Misty Roboter so programmiert, dass er auf Messen mit Besuchern und potentiellen Studenten kommunizieren kann.", "Er kann Fragen zum Informatikstudium an der Technischen Hochschule Nürnberg beantworten und einfache Kommandos befolgen."],
+            image: "assets/projects/misty.jpg",
+            alt: "Roboter namens Misty",
             buttons: [
-                { text: "Download Projects", href: "assets/cv.pdf", target: "_blank", download: true },
-                { text: "Read more", href: "#contact", target: "_self", download: false },
+                { text: "Demo", href: "https://www.youtube.com/watch?v=QuMzrPgPDSg", target: "_blank", download: false },
+                { text: "Längere Demo", href: "https://www.youtube.com/watch?v=XntisDvQ60I", target: "_blank", download: false },
             ]
         },
         {
-            title: "Random Project 2",
-            time: "2025",
-            place: "Erlangen",
-            description: "Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero e",
-            image: "assets/foto.jpg",
-            alt: "Alt 2",
-            labels: ["HTML", "CSS", "React", "JavaScipt"],
-            buttons: [
-                { text: "Download Projects 2", href: "assets/cv.pdf", target: "_blank", download: true },
-                { text: "Read more 2", href: "#contact", target: "_self", download: false },
-            ]
+            title: "Dungeon Rollout",
+            time: "2021",
+            place: "Nürnberg, Deutschland",
+            labels: ["C#", "Windows Forms", "Gimp", "Visual Studio"],
+            description: ["Im Rahmen der Software Engineering Vorlesung sollte ein einfaches Spiel entworfen und programmiert werden.", "Mein Team und ich entschieden uns für ein 2D Spiel, bei dem ein Kreis von den eckigen Formen in einem Kerker gefangen genommen wurde und fliehen muss. Dabei muss er an den bösen Drei, Vier- und Fünfecken verbeikommen."],
+            image: "assets/projects/dungeon-rollout.jpg",
+            alt: "Startbildschirm zum Spiel Dungeon Rollout",
+            buttons: []
         },
     ];
 
