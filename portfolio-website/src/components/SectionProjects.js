@@ -1,10 +1,7 @@
-import React from 'react'
-
 import "../style/section-projects.css"
 import "../App.css"
 
-import NavigationSidebar from "./NavigationSidebar";
-import NavigationBar from "./NavigationBar";
+import React from 'react'
 import ProjectCard from "./ComponentCards";
 
 const SectionProjects = () => {
@@ -46,9 +43,6 @@ const SectionProjects = () => {
 
     return (
         <div className="App">
-            <NavigationSidebar />
-            <NavigationBar style={{ position: 'absolute', zIndex: '1' }} />
-
             <section class="content" id="projects">
                 <h1>Projekte</h1>
                 <p>Hier befindet sich eine Zusammenfassung der Projekte, die ich in letzter Zeit angegangen bin und an denen ich mitgearbeitet habe. Darunter befinden sich Projekte die an der Hochschule durchgeführt wurden, sowie private Projekte und Projekte von der Arbeit bei insert effect.</p>

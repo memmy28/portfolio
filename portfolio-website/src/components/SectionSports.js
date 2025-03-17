@@ -1,21 +1,14 @@
-import React from 'react'
-
-import "../style/section-about.css"
 import "../style/section-projects.css"
 import "../App.css"
 
-import DutchOpen from "./route-sports/2024DutchOpen";
-
-import NavigationSidebar from "./NavigationSidebar";
-import NavigationBar from "./NavigationBar";
+import React from 'react'
 import Buttons from "./ComponentButtons";
+
+import DutchOpen from "./route-sports/2024DutchOpen";
 
 const SectionSports = () => {
     return (
         <div className="App">
-            <NavigationSidebar />
-            <NavigationBar style={{ position: 'absolute', zIndex: '1' }} />
-
             <section class="content" id="sports">
             <h1>Sportliche Karriere</h1>
             <p>Seit 2017 bin ich Mitglied des Perspektivkaders der Deutschen Taekwondo Union.</p>
