@@ -30,7 +30,6 @@ export default function ProjectCard({ project }) {
         <LanguageLabels labels={project.labels} />
         <div id="projects-container">
           {project.description.map((description, index) => (
-            // <ProjectCard key={index} project={project} />
             <Typography className="card-text" variant="body2" key={index}>{description}</Typography>
           ))}
         </div>
