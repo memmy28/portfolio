@@ -3,14 +3,14 @@ import "../style/navigation.css"
 
 const NavigationBar = () => {
     const links = [
-        { text: "Über mich", href: "#about", target: "_self" },
-        { text: "Ausbildung", href: "#education", target: "_self" },
-        { text: "Beruf", href: "#experience", target: "_self" },
-        { text: "Skills", href: "#skills", target: "_self" },
-        { text: "Projekte", href: "#projects", target: "_self" },
-        { text: "Sportliche Karriere", href: "#sports", target: "_self" },
-        { text: "Hobbies", href: "#hobbies", target: "_self" },
-        { text: "Kontakt", href: "#contact", target: "_self" }
+        { text: "Über mich", href: "/", target: "_self" },
+        { text: "Ausbildung", href: "/ausbildung", target: "_self" },
+        { text: "Erfahrungen", href: "/erfahrungen", target: "_self" },
+        { text: "Skills", href: "/skills", target: "_self" },
+        { text: "Projekte", href: "/projekte", target: "_self" },
+        { text: "Sportliche Karriere", href: "/sportliche-karriere", target: "_self" },
+        { text: "Hobbies", href: "/hobbies", target: "_self" },
+        { text: "Kontakt", href: "/kontakt", target: "_self" }
     ];
 
     const [isOpen, setIsOpen] = useState(false);
