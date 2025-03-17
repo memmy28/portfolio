@@ -12,9 +12,9 @@ const SectionProjects = () => {
             place: "Nürnberg, Deutschland",
             labels: ["Python", "OpenCV", "Tesseract", "SciKit Image", "PyCharm"],
             description: ["Die Liveübertragung eines Taekwondo-Wettkampfs kann mehrere Stunden lang sein und eine hohe Anzahl an Einzelkämpfen enthalten. Darin einen bestimmten Kampf zu finden kann somit schwierig sein. Dieses Projekt befasst sich mit einer automatischen Identifizierung der Zeitpunkte, zu denen die Kämpfe einer Taekwondo-Liveübertragung starten und enden.", "Zusätzlich werden die Kampfnummern und Namen der Athleten aus dem Video extrahiert und mit den identifizierten Zeitpunkten aufgelistet, um die Suche nach einem bestimmten Kampf zu vereinfachen."],
-            image: "assets/projects/bachelorarbeit.jpg",
+            image: "assets/projects/bachelor/bachelorarbeit.jpg",
             alt: "Testframes, die bei der Entwicklung des Projekts verwendet wurden",
-            buttons: []
+            buttons: [{ text: "Weitere Infos", href: "/projekte/schneiden-von-livestreams", target: "_self", download: false },]
         },
         {
             title: "Chatbot zur Beantwortung von Fragen zum Studium",
