@@ -59,6 +59,10 @@
 * desktop: >= 1600px
 */
 
+html {
+  background-color: var(--color-black);
+}
+
 .App {
   text-align: center;
   cursor: default;

@@ -14,7 +14,7 @@ const SectionAboutMe = () => {
                 und neue Erfahrungen in verschiedenen Bereichen zu sammeln.</p>
             <Buttons buttons={[
                 { text: "Zu meinem Lebenslauf", href: "assets/cv.pdf", target: "_blank", download: true },
-                { text: "Kontaktiere mich", href: "#contact", target: "_self", download: false },
+                { text: "Kontaktiere mich", href: "/kontakt", target: "_self", download: false },
             ]} />
         </section>
     );

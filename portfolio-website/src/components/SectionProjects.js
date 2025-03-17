@@ -1,6 +1,11 @@
 import React from 'react'
-import ProjectCard from "./ComponentCards";
+
 import "../style/section-projects.css"
+import "../App.css"
+
+import NavigationSidebar from "./NavigationSidebar";
+import NavigationBar from "./NavigationBar";
+import ProjectCard from "./ComponentCards";
 
 const SectionProjects = () => {
     const projects = [
@@ -40,14 +45,20 @@ const SectionProjects = () => {
     ];
 
     return (
-        <section id="projects">
-            <h1>Projects</h1>
-            <div id="projects-container">
-                {projects.map((project, index) => (
-                    <ProjectCard key={index} project={project} />
-                ))}
-            </div>
-        </section>
+        <div className="App">
+            <NavigationSidebar />
+            <NavigationBar style={{ position: 'absolute', zIndex: '1' }} />
+
+            <section class="content" id="projects">
+                <h1>Projekte</h1>
+                <p>Hier befindet sich eine Zusammenfassung der Projekte, die ich in letzter Zeit angegangen bin und an denen ich mitgearbeitet habe. Darunter befinden sich Projekte die an der Hochschule durchgeführt wurden, sowie private Projekte und Projekte von der Arbeit bei insert effect.</p>
+                <div id="projects-container">
+                    {projects.map((project, index) => (
+                        <ProjectCard key={index} project={project} />
+                    ))}
+                </div>
+            </section>
+        </div>
     );
 };
 
