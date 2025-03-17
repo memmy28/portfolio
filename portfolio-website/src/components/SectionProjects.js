@@ -46,7 +46,7 @@ const SectionProjects = () => {
             <section class="content" id="projects">
                 <h1>Projekte</h1>
                 <p>Hier befindet sich eine Zusammenfassung der Projekte, die ich in letzter Zeit angegangen bin und an denen ich mitgearbeitet habe. Darunter befinden sich Projekte die an der Hochschule durchgeführt wurden, sowie private Projekte und Projekte von der Arbeit bei insert effect.</p>
-                <div id="projects-container">
+                <div id="projects-container-main">
                     {projects.map((project, index) => (
                         <ProjectCard key={index} project={project} />
                     ))}
