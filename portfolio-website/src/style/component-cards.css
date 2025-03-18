@@ -1,3 +1,4 @@
+/* project card */
 .project-card {
   background-color: var(--secondary-background-color) !important;
   color: var(--primary-text-color) !important;
@@ -41,31 +42,31 @@
 }
 
 @media (max-width: 599px) {
-  img {
+  .project-card img {
     height: 250px;
   }
 }
 
 @media (max-width: 767px) {
-  img {
+  .project-card img {
     height: 300px;
   }
 }
 
 @media (max-width: 1023px) {
-  img {
+  .project-card img {
     height: 350px;
   }
 }
 
 @media (max-width: 1599px) {
-  img {
+  .project-card img {
     height: 250px;
   }
 }
 
 @media (min-width: 1600px) {
-  img {
+  .project-card img {
     height: 350px;
   }
 }

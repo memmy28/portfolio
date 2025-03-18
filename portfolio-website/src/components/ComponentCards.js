@@ -21,7 +21,6 @@ export default function ProjectCard({ project }) {
     <Card className="project-card" >
       <CardMedia className="project-card-media"
         component="img"
-        height="200"
         image={project.image}
         alt={project.alt}
       />

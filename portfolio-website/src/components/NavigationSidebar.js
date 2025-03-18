@@ -8,7 +8,7 @@ const NavigationSidebar = () => {
         { text: "Erfahrungen", href: "/erfahrungen", target: "_self" },
         { text: "Skills", href: "/skills", target: "_self" },
         { text: "Projekte", href: "/projekte", target: "_self" },
-        { text: "Sportliche Karriere", href: "/sportliche-karriere", target: "_self" },
+        { text: "Sport", href: "/sportliche-karriere", target: "_self" },
         { text: "Hobbies", href: "/hobbies", target: "_self" },
         { text: "Kontakt", href: "/kontakt", target: "_self" }
     ];
